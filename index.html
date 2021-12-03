@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceSc</title>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="vid-overlay hidden"></div>
+    <div class="video hidden">
+      <div class="vid-top">
+        <p class="close-btn">&times;</p>
+      </div>
+      <iframe
+        src="https://www.youtube.com/embed/_oCgtA9E6YI?enablejsapi=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="navbar">
+      <div class="left">
+        <a class="logo accent-1" href="#">Space<span>Sc</span></a>
+
+        <!-- Hidden On Mobile 👇 -->
+        <ul>
+          <li><a href="#astronomy">Astronomy</a></li>
+          <li><a href="#astronautics">Astronautics</a></li>
+          <li><a href="#space-life">Space Life</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <!-- Hidden On Desktop 👇 -->
+        <i class="fas fa-bars nav-menu">
+          <ul>
+            <!-- Positioned Absolutely And Hidden -->
+            <li><a href="#astronomy">Astronomy</a></li>
+            <hr />
+            <li><a href="#astronautics">Astronautics</a></li>
+            <hr />
+            <li><a href="#space-life">Space Life</a></li>
+            <hr />
+            <li>
+              <p class="tip-btn"><i class="fas fa-lightbulb"></i> Tip</p>
+            </li>
+            <li>
+              <div class="cta-btn"><a href="#footer">Navars</a></div>
+            </li>
+          </ul>
+        </i>
+
+        <!-- Hidden On Mobile 👇 -->
+        <div class="btns">
+          <p class="tip-btn"><i class="fas fa-lightbulb"></i> Tip</p>
+          <div class="cta-btn"><a href="#footer">Navars</a></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="hero" class="hero overlay">
+      <!-- overlay will be the ::after element of overlay class -->
+
+      <div class="content">
+        <h1 class="accent-2"><span>Space</span> Science</h1>
+        <p class="accent-1">
+          Space science encompasses all of the scientific disciplines that
+          involve <span><a href="#space-life">space exploration</a></span> and
+          study natural phenomena and physical bodies occurring in outer space,
+          such as <span><a href="#astronomy">Astronomy</a></span> and
+          <span><a href="#astronautics">Astronautics</a></span
+          >.
+        </p>
+
+        <div class="cta-btn open-btn">
+          <i class="fas fa-video"></i>
+          <p>Interesting Space Facts</p>
+        </div>
+      </div>
+
+      <img
+        class="section-image"
+        src="images/illustration-stars.svg"
+        alt="stars-illustration"
+      />
+    </section>
+
+    <section id="astronomy">
+      <div class="section-images irl">
+        <img src="images/image-constellation.jpg" alt="constellation" />
+        <img src="images/image-clip1-telescope.jpg" alt="telescope" />
+        <img src="images/image-cosmology.jpg" alt="cosmology" />
+      </div>
+
+      <div class="content">
+        <div class="info-box">
+          <h2 class="accent-1"><span>Astro</span>nomy</h2>
+          <p class="accent-2">
+            Astronomy is a science that studies celestial objects and phenomena
+            and explains their origin and evolution. It includes
+            <span data-info="the study of stars">Stellar Astronomy</span>,
+            <span data-info="the study of the milky way galaxy"
+              >Galactic Astronomy</span
+            >,
+            <span
+              data-info="the study of objects outside the milky way
+              galaxy"
+              >Extragalactic Astronomy</span
+            >, <span data-info="the study of planets">Planetary Science</span>,
+            etc.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="info-box">
+          <!-- Position Absolute <i> -->
+          <h3 class="accent-1">
+            <i class="fas fa-space-shuttle"></i><span>Astro</span>physics
+          </h3>
+          <p class="accent-2">
+            Astrophysics is a science that employs the methods and principles of
+            physics in the study of astronomical objects and phenomena. It
+            includes
+            <span data-info="concerned with recording and interpreting data"
+              >Observational Astrophysics</span
+            >
+            and
+            <span
+              data-info="concerned with finding out the measurable implications of physical models"
+              >Theoretical Astrophysics</span
+            >. The objects studied include stars, galaxies,
+            <span
+              data-info="any planetary body that is outside the solar system"
+              >extrasolar planets</span
+            >, etc.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="info-box">
+          <h3 class="accent-1">
+            <i class="fas fa-space-shuttle"></i><span>Cosmo</span>logy
+          </h3>
+          <p class="accent-2">
+            Cosmology is a branch of astronomy concerned with the study of the
+            chronology of the universe including it's origin and dynamics. It
+            includes
+            <span
+              data-info="the study of the universe's origin, its large-scale structures and dynamics, its ultimate fate, and the laws of science that govern these areas"
+              >Physical Cosmology</span
+            >, which is studied by physicists, astronomers, and even
+            philosophers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="astronautics" class="overlay">
+      <img
+        class="seperator-image one"
+        src="images/seperator-astronaut.png"
+        alt="astronaut-illustration"
+      />
+
+      <div class="content">
+        <div class="info-box">
+          <h2 class="accent-2"><span>Astro</span>nautics</h2>
+          <p class="accent-1">
+            Astronautics (or cosmonautics) is the theory and practice of travel
+            beyond Earth's atmosphere into outer space.
+            <span
+              data-info="an application of astronautics to fly spacecraft into
+              or through outer space, either with or without humans on board"
+              >Spaceflight</span
+            >
+            is one of its main applications and is an application of
+            astronautics to fly spacecraft into or through outer space, either
+            with or without humans on board. Astronautics is a subset of
+            Aerospace Engineering.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="info-box">
+          <!-- Position Absolute 👆 -->
+          <h3 class="accent-2">
+            <i class="fas fa-space-shuttle"></i><span>Aero</span>space
+          </h3>
+          <p class="accent-1">
+            The Aerospace Industry designs, manufactures, and operates vehicles
+            moving through air and space. Aerospace engineering is a field of
+            engineering concerned with the development of aircrafts and
+            spacecrafts. It has two major and overlapping branches:
+            <span
+              data-info="the science involved with the study, design, and manufacture of flight-capable machines, or the techniques of operating aircrafts"
+              >Aeronautical Engineering</span
+            >
+            and
+            <span
+              data-info="the field of designing, developing and manufacturing spacecrafts"
+              >Astronautical Engineering</span
+            >.
+            <span data-info="the study of the science of flight"
+              >Aeronautics</span
+            >, along with Astronautics, is another subset of Aerospace
+            Engineering.
+          </p>
+        </div>
+      </div>
+
+      <img
+        class="section-image"
+        src="images/illustration-spaceshuttle.svg"
+        alt="spaceshuttle"
+      />
+
+      <img
+        class="seperator-image two"
+        src="images/seperator-asteroid.png"
+        alt="asteroid-illustration"
+      />
+    </section>
+
+    <section id="space-life">
+      <div class="section-images">
+        <img src="images/illustration-astronaut-rocket.svg" alt="spaceflight" />
+        <img src="images/illustration-plants.svg" alt="space-plants" />
+        <img src="images/illustration-food.svg" alt="space-food" />
+      </div>
+
+      <div class="content">
+        <div class="info-box">
+          <h2 class="accent-1"><span>Space</span> Life</h2>
+          <p class="accent-2">
+            Space, particularly
+            <span
+              data-info="the condition in which people or objects appear to be weightless"
+              >microgravity</span
+            >, make life different to life on Earth. Mundane needs such as air,
+            pressure, temperature and light, as well as movement, hygiene and
+            food intake are confronted with challenges.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="info-box">
+          <!-- Position Absolute <i> -->
+          <h3 class="accent-1">
+            <i class="fas fa-space-shuttle"></i><span>Spaceflight</span> Effects
+          </h3>
+          <p class="accent-2">
+            Venturing into space can have negative effects on the human body.
+            Significant adverse effects of long-term weightlessness include
+            <span data-info="thinning/loss of muscle tissue"
+              >muscle atrophy</span
+            >, deterioration of the skeleton and many other
+            <span
+              data-info="slowing of cardiovascular system functions, decreased production of red blood cells, balance disorders, eyesight disorders and changes in the immune system"
+              >significant effects</span
+            >
+            that can have a lasting impact on the human body.
+            <span
+              data-info="the practice of medicine on astronauts in outer space to ensure that astronauts work in a safe environment to ensure that astronauts work in a safe environment"
+              >Space Medicine</span
+            >
+            is used to treat problems like these in space.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="info-box">
+          <h3 class="accent-1">
+            <i class="fas fa-space-shuttle"></i><span>Space</span> Plants
+          </h3>
+          <p class="accent-2">
+            The growth of plants in outer space has elicited much scientific
+            interest. In the late 20th and early 21st century, plants were often
+            taken into space in low Earth orbit to be grown in specialized
+            <span
+              data-info="a weightless but pressurized controlled environment"
+              >space gardens</span
+            >. In the context of human space life, they can be consumed as food
+            and provide a refreshing atmosphere.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="info-box">
+          <h3 class="accent-1">
+            <i class="fas fa-space-shuttle"></i><span>Space</span> Food
+          </h3>
+          <p class="accent-2">
+            <span
+              data-info="ranges from common foods like cookies and fruits to drinks like coffee and lemonade"
+              >Space food</span
+            >
+            is a type of food product created and processed for consumption by
+            astronauts during outer space missions. The food has a lot of
+            <span
+              data-info="providing balanced nutrition for individuals working in space, while being easy and safe to store, prepare and consume in the machinery-filled weightless environments of crewed spacecraft"
+              >specific requirements</span
+            >. Most space food is freeze-dried and stored in disposable packages
+            to ensure a long shelf life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="footer overlay">
+      <!-- overlay will be the ::after of overlay -->
+      <img
+        class="seperator-image three"
+        src="images/seperator-spaceshuttle.svg"
+        alt="astronaut-illustration"
+      />
+
+      <div class="content">
+        <h2 class="accent-2">
+          If you want to learn more about <span>Space</span>
+        </h2>
+        <p class="accent-1">
+          You can check out these awesome courses by
+          <span
+            ><a
+              target="_blank"
+              href="https://www.navarsedutech.com/#/courses/grd9to12"
+              >Navars</a
+            ></span
+          >!
+        </p>
+
+        <div class="cta-btn">
+          <a
+            target="_blank"
+            href="https://www.navarsedutech.com/#/courses/grd9to12"
+          >
+            <i class="fas fa-user-astronaut"></i>
+            <p>Navars Courses</p>
+          </a>
+        </div>
+      </div>
+
+      <img
+        class="section-image"
+        src="images/illustration-rocket.svg"
+        alt="rocket-illustration"
+      />
+
+      <span class="creds">Made by <strong>Soham Daga</strong></span>
+    </section>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
