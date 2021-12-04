@@ -564,6 +564,7 @@ section {
         z-index: 1;
 
         visibility: hidden;
+        pointer-events: none;
 
         box-sizing: border-box;
       }

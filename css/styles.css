@@ -557,6 +557,7 @@ section .cta-btn:hover {
   transition: all 0.3s;
   z-index: 1;
   visibility: hidden;
+  pointer-events: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
