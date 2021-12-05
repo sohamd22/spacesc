@@ -489,11 +489,6 @@ section {
   }
 
   .cta-btn {
-    a {
-      display: flex;
-      align-items: center;
-    }
-
     i {
       font-size: 1.6rem;
     }
@@ -658,13 +653,11 @@ section {
   section {
     display: grid;
     grid-column-gap: 6rem;
-    //grid-column-gap: 10rem;
     grid-template-columns: 50% auto;
     align-items: center;
     justify-items: center;
 
     padding: 10rem 4rem 10rem 5rem;
-    //padding: 13rem 12.5rem 13rem 15rem;
 
     .cta-btn {
       margin: 5rem 0 0;
@@ -786,7 +779,7 @@ section {
       ul {
         display: flex;
         font-weight: w(light);
-        margin-left: 3.5rem; //6rem
+        margin-left: 3.5rem;
       }
 
       li {
@@ -906,26 +899,3 @@ section {
     max-width: 720px;
   }
 }
-
-// h1 {
-//   font-size: 4.4rem;
-
-//   + p {
-//     font-size: 1.55rem;
-//   }
-// }
-// h2 {
-//   font-size: 4rem;
-
-//   + p {
-//     font-size: 1.45rem;
-//   }
-// }
-// h3 {
-//   font-size: 3.2rem;
-//   position: relative;
-
-//   + p {
-//     font-size: 1.3rem;
-//   }
-// }
